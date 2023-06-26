@@ -1,0 +1,10 @@
+﻿@model List<Category>
+
+
+<a href="/dashboard/category/create">Create</a>
+
+
+@foreach (var cat in Model)
+    {
+        <h1>@cat.CategoryName</h1>
+    }

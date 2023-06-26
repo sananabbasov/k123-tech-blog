@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9D3566CA-0130-41D2-AC34-2EE8240A5380}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebUI/Areas/Dashboard/Views/Shared/_AdminLayout.cshtml">
+    <Files>
+      <File FileName="WebUI/Areas/Dashboard/Views/Article/Create.cshtml" Line="37" Column="34" />
+      <File FileName="WebUI/Areas/Dashboard/Views/Shared/_AdminLayout.cshtml" Line="384" Column="8" />
+      <File FileName="WebUI/Views/Article/Detail.cshtml" Line="40" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="K123TechBlog" expanded="True">
+            <Node name="WebUI" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Dashboard" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="Article" expanded="True" />
+                    <Node name="Shared" expanded="True">
+                      <Node name="_AdminLayout.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Article" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Controllers/AuthController.cs" relfile="WebUI/Controllers/AuthController.cs" line="1" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

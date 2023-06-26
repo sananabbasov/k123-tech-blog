@@ -1,0 +1,40 @@
+﻿@model List<Category>
+
+<form method="post">
+    <input class="form-control" type="text" name="Title" placeholder="Article Title" />
+    <br />
+    <textarea class="form-control" type="text" name="Description" placeholder="Article Description"></textarea>
+    <br />
+    <input class="form-control" type="text" name="SeoUrl" placeholder="Article SeoUrl" />
+    <br />
+    <span>Is Pinned</span>
+    <input type="checkbox" name="IsPinned" value="true" />
+    <br />
+    <input class="form-control" type="text" name="PhotoUrl" placeholder="Article PhotoUrl" />
+    <br />
+
+
+
+    <select name="CategoryId" class="form-control col-4">
+        @foreach (var cat in Model)
+        {
+            <option value="@cat.Id">@cat.CategoryName</option>
+        }
+
+    </select>
+    <br />
+    <br />
+    <input class="btn btn-success" type="submit" value="Create" />
+    <br />
+</form>
+
+
+@section Scripts{
+
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('Description');
+
+</script>
+}

@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7b90f0be-5f5c-475c-aa4f-84fd0c29ae2b</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <Content Remove="wwwroot\admin\" />
+    <Content Remove="wwwroot\vendor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="wwwroot\vendor\" />
+    <Folder Include="Data\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Dashboard\" />
+    <Folder Include="Areas\Dashboard\Controllers\" />
+    <Folder Include="Areas\Dashboard\Views\" />
+    <Folder Include="Areas\Dashboard\Views\Shared\" />
+    <Folder Include="Areas\Dashboard\Views\Home\" />
+    <Folder Include="Views\Dashboard\" />
+    <Folder Include="Areas\Dashboard\Views\Category\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Areas\Dashboard\Views\Article\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Article\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Dashboard\" />
+    <None Remove="Areas\Dashboard\Controller\" />
+    <None Remove="Areas\Dashboard\Views\" />
+    <None Remove="Areas\Dashboard\Views\Shared\" />
+    <None Remove="Areas\Dashboard\Views\Home\" />
+    <None Remove="Views\Dashboard\" />
+    <None Remove="Areas\Dashboard\Views\Category\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="DTOs\" />
+    <None Remove="Helpers\" />
+    <None Remove="Areas\Dashboard\Views\Article\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\Article\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+  </ItemGroup>
+</Project>

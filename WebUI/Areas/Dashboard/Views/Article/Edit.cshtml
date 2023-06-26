@@ -1,0 +1,45 @@
+﻿@model Article
+
+
+<form method="post">
+    <input class="form-control" value="@Model.Title" type="text" name="Title" placeholder="Article Title" />
+    <br />
+    <input class="form-control" value="@Model.Description" type="text" name="Description" placeholder="Article Description" />
+    <br />
+    <input class="form-control" value="@Model.SeoUrl" type="text" name="SeoUrl" placeholder="Article SeoUrl" />
+    <br />
+    <span>Is Pinned</span>
+    @if (Model.IsPinned)
+    {
+        <input type="checkbox" name="IsPinned" value="true" checked />
+    }
+    else
+    {
+        <input type="checkbox" name="IsPinned" value="true" />
+
+    }
+    <br />
+    <input class="form-control" type="text"  value="@Model.PhotoUrl" name="PhotoUrl" placeholder="Article PhotoUrl" />
+    <br />
+
+
+
+    <select name="CategoryId" class="form-control col-4">
+        @foreach (var cat in ViewData["Categories"] as List<Category>)
+        {
+            if (Model.CategoryId == cat.Id)
+            {
+                <option selected value="@cat.Id">@cat.CategoryName</option>
+            }
+            else
+            {
+                <option value="@cat.Id">@cat.CategoryName</option>
+            }
+        }
+
+    </select>
+    <br />
+    <br />
+    <input class="btn btn-warning" type="submit" value="Update" />
+    <br />
+</form>

@@ -1,0 +1,52 @@
+﻿@model List<Article>
+
+
+
+<a href="/dashboard/article/create">Create</a>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Photo</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Settings</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+
+                int count = 1;
+
+            }
+
+            @foreach (var article in Model)
+            {
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>
+                        <img width="50" height="50" src="@article.PhotoUrl" />
+                    </td>
+                    <td>@article.Title</td>
+                    <td>@article.Category.CategoryName</td>
+                    <td>
+                        <a href="/dashboard/article/edit/@article.Id" class="btn btn-warning">Edit</a>
+                        <a href="/" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                count++;
+            }
+
+
+
+        </tbody>
+    </table>
+
+}
+else
+{
+    <h1>Melumat yoxdu</h1>
+}
