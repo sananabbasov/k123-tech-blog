@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RYBTgctPCI60YNbxnNFo9KCyHpQ2QBzT9XC4PoaIfQQ=",
+  "Hash": "iP+WQQa6VoBddJroC6BfC/J2iCOsGmRUZDzwhLNPei4=",
   "Source": "WebUI",
   "BasePath": "_content/WebUI",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/admin/.DS_Store",
+      "SourceId": "WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/",
+      "BasePath": "_content/WebUI",
+      "RelativePath": "admin/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/.DS_Store"
     },
     {
       "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/admin/css/sb-admin-2.css",
@@ -32230,6 +32247,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/vendor/jquery/jquery.slim.min.map"
+    },
+    {
+      "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/vendor/.DS_Store",
+      "SourceId": "WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/",
+      "BasePath": "_content/WebUI",
+      "RelativePath": "vendor/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/vendor/.DS_Store"
     },
     {
       "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/vendor/css/bootstrap.css",

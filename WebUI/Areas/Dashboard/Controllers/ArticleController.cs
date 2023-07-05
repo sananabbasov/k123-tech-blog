@@ -14,7 +14,7 @@ using WebUI.Models;
 namespace WebUI.Areas.Dashboard.Controllers
 {
     [Area("Dashboard")]
-    [Authorize]
+    [Authorize(Roles = "Admin, Redaktor")]
     public class ArticleController : Controller
     {
         private readonly AppDbContext _context;

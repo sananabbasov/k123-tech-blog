@@ -24,12 +24,13 @@ builder.Services
     .AddEntityFrameworkStores<AppDbContext>();
 
 
-
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/auth/login";
+    options.AccessDeniedPath = "/home/notfound";
 });
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

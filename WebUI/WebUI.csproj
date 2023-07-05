@@ -31,6 +31,11 @@
     <Folder Include="Areas\Dashboard\Views\Article\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Article\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\DashboardAuth\" />
+    <Folder Include="Areas\Dashboard\Views\Role\" />
+    <Folder Include="Areas\Dashboard\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\" />
@@ -48,6 +53,11 @@
     <None Remove="Areas\Dashboard\Views\Article\" />
     <None Remove="ViewModels\" />
     <None Remove="Views\Article\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\DashboardAuth\" />
+    <None Remove="Areas\Dashboard\Views\Role\" />
+    <None Remove="Areas\Dashboard\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />

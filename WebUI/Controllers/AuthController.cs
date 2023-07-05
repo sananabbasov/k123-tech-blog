@@ -104,6 +104,13 @@ namespace WebUI.Controllers
             await _userManager.UpdateAsync(user);
             return RedirectToAction("Login");
         }
+
+
+        public async Task<IActionResult> Logout()
+        {
+            await _singInManager.SignOutAsync();
+            return RedirectToAction("Login");
+        }
     }
 }
 

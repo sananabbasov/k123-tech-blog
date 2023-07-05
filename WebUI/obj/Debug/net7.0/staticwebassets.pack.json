@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/admin/.DS_Store",
+      "PackagePath": "staticwebassets/admin/.DS_Store"
+    },
+    {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/admin/css/sb-admin-2.css",
       "PackagePath": "staticwebassets/admin/css/sb-admin-2.css"
     },
@@ -7335,6 +7339,10 @@
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/admin/vendor/jquery/jquery.slim.min.map",
       "PackagePath": "staticwebassets/admin/vendor/jquery/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/vendor/.DS_Store",
+      "PackagePath": "staticwebassets/vendor/.DS_Store"
     },
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/wwwroot/vendor/css/bootstrap.css",

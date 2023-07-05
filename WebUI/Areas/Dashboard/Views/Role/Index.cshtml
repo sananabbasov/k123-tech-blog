@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+
+
+
+<a href="/dashboard/role/create">Create</a>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            int count = 1;
+
+            @foreach (var role in Model)
+            {
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>
+                        @role.Name
+                    </td>
+                </tr>
+                count++;
+            }
+
+
+        }
+        else
+        {
+            <h5>Melumat yoxdu</h5>
+        }
+    </tbody>
+</table>
+
