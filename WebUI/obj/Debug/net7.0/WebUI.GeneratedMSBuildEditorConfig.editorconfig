@@ -68,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGFzaGJvYXJkL1ZpZXdzL19WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Views/Article/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aWNsZS9DYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Views/Article/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXJ0aWNsZS9EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -94,6 +98,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Views/Shared/Components/Category/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQ2F0ZWdvcnkvQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sanan/Desktop/Projects/Compar Academy/K123/CSharp/Web/K123TechBlog/WebUI/Views/Shared/Components/DashboardAuth/DashboardAuth.cshtml]

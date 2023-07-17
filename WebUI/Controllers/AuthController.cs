@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebUI.DTOs;
 using WebUI.Helpers;
 using WebUI.Models;
+using WebUI.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -39,6 +40,9 @@ namespace WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(UserLoginDTO userLogin)
         {
+            string fromDetail = HttpContext.Request.Query["returnUrl"].ToString();
+
+
             var findUser = await _userManager.FindByEmailAsync(userLogin.Email);
             if (findUser == null)
             {
@@ -50,6 +54,11 @@ namespace WebUI.Controllers
 
             if (result.Succeeded)
             {
+                if (fromDetail.Length != 0)
+                {
+                    var returnId = fromDetail.Split("/").ToArray();
+                    return Redirect($"/article/detail/{returnId[2]}/{returnId[3]}");
+                }
                 return RedirectToAction("Index", "Home");
             }
 

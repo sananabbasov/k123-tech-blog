@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Category>
+
+@foreach (var category in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link" href="/article/category/@category.SeoUrl">@category.CategoryName</a>
+    </li>
+}
+

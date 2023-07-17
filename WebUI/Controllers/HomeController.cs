@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebUI.Data;
@@ -17,10 +18,24 @@ public class HomeController : Controller
         _logger = logger;
         _context = context;
     }
-
-    public IActionResult Index()
+    // localhost:5431/home/index?page=2
+    public IActionResult Index(int page=1)
     {
-        var articles = _context.Articles.Include(x=>x.User).Include(x=>x.Category).OrderByDescending(x=>x.Id).ToList();
+        int productCount = _context.Articles.Count();
+        ViewBag.PageCount = productCount % 3 == 0 ? productCount / 3 : productCount / 3 + 1;
+        ViewBag.NextPage = page + 1;
+        ViewBag.PrevPage = page - 1;
+        ViewBag.CurrentPage = page;
+        if (ViewBag.PrevPage==null || page - 1 <= 0)
+        {
+            ViewBag.PrevPage = 1;
+        }
+        int skipPage = (page * 3)-3;
+        var articles = _context.Articles.Include(x=>x.User).Include(x=>x.Category).OrderByDescending(x=>x.Id).Skip(skipPage).Take(3).ToList();
+        if (!articles.Any())
+        {
+            return RedirectToAction("NotFound");
+        }
         var pinnedArticles = _context.Articles.Where(x=>x.IsPinned == true).OrderByDescending(x => x.Id).Take(5).ToList();
         var categories = _context.Categories.ToList();
         HomeVM vm = new()
